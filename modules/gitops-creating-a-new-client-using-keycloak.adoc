@@ -10,15 +10,7 @@
 kubectl create -n argocd -f examples/argocd-keycloak.yaml
 ----
 . After creating the Argo CD instance, login into the keycloak console.
-+
-[source,yaml]
-----
-kubectl -n argocd get route keycloak
-
-NAME   HOST/PORT                                                                PATH   SERVICES   PORT    TERMINATION   WILDCARD
-keycloak    keycloak-default.apps.ci-ln-******.origin-ci-int-aws.dev.**.com          keycloak        <all>   reencrypt     None
-----
-. Get the Keycloak Pod Name which is stored as environment variables in the keycloak pod.
+. Get the Keycloak credentials which is stored as environment variables in the keycloak pod.
 +
 [source,yaml]
 ----

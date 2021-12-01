@@ -12,12 +12,12 @@
 [source,yaml]
 ----
   apiVersion: argoproj.io/v1alpha1
-kind: ArgoCD
+kind: ArgoCDUpdating
 metadata:
   name: example-argocd
   labels:
     example: openshift-oauth
-spec:
+spec:Updating
   dex:
     config: |
       connectors:
